@@ -1,56 +1,20 @@
-# Municipal-Water-Billing-System
-"Full-stack web application for municipal water billing and payment tracking using Spring Boot and React." "API server enabling retrieval, payment, and emailing of municipal water bills."
-## Features
+Frontend scaffold for Municipal Water Bill Payments
 
-- Search water bills by bill number
-- Generate payment links for bills
-- Send payment reminder emails automatically
-- Backend API built using Spring Boot
-- Frontend developed with React
+Folder structure included in this zip:
+- public/index.html
+- src/components/*
+- src/pages/*
+- src/services/api.js
+- src/App.js, src/index.js
+- package.json, tailwind.config.js
 
-## Technologies Used
+Notes:
+- This is a minimal, ready-to-expand scaffold. Replace API endpoints with your backend.
+- Configure runtime base URL by editing public/index.html (window.__APP_CONFIG__.API_BASE) or set REACT_APP_API_BASE at build time.
+- To run locally (CRA style):
+  1) npm install
+  2) npm start
 
-- Spring Boot 3.x (Java backend)
-- PostgreSQL database
-- React 18.x (Frontend UI)
-- Axios for HTTP requests
-- Spring Security for authentication
-
-## Getting Started
-
-### Prerequisites
-
-- Java 17 or higher
-- Maven 3.x
-- Node.js and npm
-- PostgreSQL database setup
-
-### Setup Backend
-
-1. Navigate to the backend directory:
-cd waterbill-backend
-
-text
-2. Build and run:
-mvn clean install
-mvn spring-boot:run
-
-text
-3. Make sure PostgreSQL is running and configured in `application.properties`.
-
-### Setup Frontend
-
-1. Navigate to the frontend directory:
-cd municipal-waterbill-frontend
-
-text
-2. Install dependencies and start:
-npm install
-npm start
-
-text
-3. The app runs on [http://localhost:3000](http://localhost:3000).
-
-## Important Notes
-
-- Backend CORS
+If you want, I can now:
+- Generate a mock Express backend matching the API used.
+- Split the components into TypeScript and add unit tests.
